@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Teacher_List" Title="Teacher List">
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <ListView x:Name="DataList" ItemTapped="DataList_ItemTapped" HasUnevenRows="True" SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="5">
+                                <Frame CornerRadius="10" HasShadow="True" Padding="7">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="{Binding Image}" HeightRequest="100" WidthRequest="100"/>
+                                        <StackLayout Padding="3">
+                                            <Label TextColor="#bd6513" Text="{Binding TEACHER_NAME }" VerticalOptions="Center" FontAttributes="Bold"/>
+                                            <Label TextColor="#bd6513" Text="{Binding DEPARTMENT_NAME }" VerticalOptions="Center" FontSize="Small" />
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+                        <!--<ImageCell Text="{Binding TEACHER_NAME}" Detail="{Binding DEPARTMENT_NAME }" ImageSource="{Binding Image}"/>-->
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

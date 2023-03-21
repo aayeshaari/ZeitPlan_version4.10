@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Teacher.Notification_Details"
+             Title="Notification Details">
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+
+            <!--<ScrollView Orientation="Vertical">-->
+            <Image x:Name="NtImage"/>
+
+
+            <StackLayout Padding="24" Margin="0,30" >
+
+                <Frame BackgroundColor="#bd6513" HasShadow="True" HeightRequest="400" WidthRequest="400" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+
+                    <Grid ColumnDefinitions="130,160" VerticalOptions="Center" Grid.ColumnSpan="2" Grid.RowSpan="6" HorizontalOptions="Center"  RowDefinitions="50,50,50,50,50,90" >
+                        <!--<Label Grid.Row="0"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"  Text="RequestD:"/>
+                    <Label Grid.Row="0" Grid.Column="1"  BackgroundColor="LightGray" x:Name="RoomID"/>-->
+                        <Label BackgroundColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"   FontAttributes="Bold" Grid.Row="0"  Grid.Column="0" Text="To :"/>
+                        <Label Grid.Row="0"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" BackgroundColor="White" Grid.Column="1"  x:Name="txtTo"/>
+
+                        <Label Grid.Row="1"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"  FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"   Text="Date :"/>
+                        <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Column="1"  BackgroundColor="White"  x:Name="txtDate"/>
+
+                        <Label Grid.Row="2"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"  FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"   Text="Time :"/>
+                        <Label Grid.Row="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Column="1"  BackgroundColor="White"  x:Name="txtTime"/>
+
+                        <Label Grid.Row="3"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"  FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"   Text="Priority :"/>
+                        <Label Grid.Row="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Column="1"  BackgroundColor="White"  x:Name="txtPriority"/>
+
+                        <Label Grid.Row="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"   Text="Status:"/>
+                        <Label Grid.Row="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Column="1"  BackgroundColor="White"  x:Name="txtStatus"/>
+
+                        <Label Grid.Row="5"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"  FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"   Text="Text:"/>
+                        <Label Grid.Row="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Column="1"  BackgroundColor="White"  x:Name="txtBody"/>
+
+
+                    </Grid>
+                </Frame>
+            </StackLayout>
+            <!--</ScrollView>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

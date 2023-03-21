@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Add_Slot" Title="Add Slot">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <Label Text=" lecture No" FontSize="20" HorizontalTextAlignment="Start"/>
+            <Entry x:Name="lblSlotName"  ReturnType="Next"/>
+            <Label Text=" Day" FontSize="20" HorizontalTextAlignment="Start"/>
+            <Entry x:Name="lblDay"  ReturnType="Next"/>
+            <Label Text="Date" FontSize="20" HorizontalTextAlignment="Start"/>
+            <DatePicker x:Name="date" />
+            <Label Text=" Start Time" FontSize="20" HorizontalTextAlignment="Start"/>
+            <TimePicker x:Name="tp" />
+            <Label Text=" End Time" FontSize="20" HorizontalTextAlignment="Start"/>
+            <TimePicker x:Name="tp1" />
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <Button Text="ok" x:Name="btn"  CornerRadius="30" Clicked="btn_Clicked"/>
+            <Label x:Name="Detail" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

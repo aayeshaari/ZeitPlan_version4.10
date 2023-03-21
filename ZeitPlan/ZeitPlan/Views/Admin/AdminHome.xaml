@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="ZeitPlan.Views.Admin.AdminHome" Title="Admin Home" BackgroundColor="white" BackgroundImageSource="mg.jpg"  >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout" Clicked="ToolbarItem_Clicked" />
+        <ToolbarItem IconImageSource="ic_noti" Clicked="ToolbarItem_Clicked_1"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView >
+        <StackLayout Padding="20"  Spacing="10">
+                <Grid>
+                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0" Margin="0">
+
+                        <Frame BackgroundColor="white"  CornerRadius="20" HeightRequest="90" HorizontalOptions="FillAndExpand" Padding="0">
+                            <Image  Source="Admin_Home.png"   Aspect="AspectFill" Margin="0" />
+
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+                <StackLayout Padding="10" Spacing="0">
+                    <Grid ColumnDefinitions="170,170" RowSpacing="0" ColumnSpacing="15" VerticalOptions="Start" HorizontalOptions="Start"  RowDefinitions="180,40,180,40,180,40" Grid.ColumnSpan="1" Grid.RowSpan="6" >
+
+
+
+                        <ImageButton  Grid.Row="0" Grid.Column="0" Source="admin.png" BorderWidth="4" HeightRequest="400" WidthRequest="60" BorderColor="white" CornerRadius="15" BackgroundColor="#e66a5e" x:Name="btnCliked" Clicked="btnCliked_Clicked"/>
+                        <Label Grid.Row="1" Text="Admin Profile"   FontAttributes="Bold" Grid.Column="0"  TextColor="#bd6513" HorizontalTextAlignment="Center"/>
+                        <ImageButton  Grid.Row="0" Grid.Column="1" Source="bk_image" BorderWidth="4" HeightRequest="400" WidthRequest="60" BorderColor="white" CornerRadius="15" BackgroundColor="#febc04" x:Name="btntime" Clicked="btntime_Clicked" />
+                        <Label Grid.Row="1" Text="Time Table"   FontAttributes="Bold" Grid.Column="1"  TextColor="#bd6513" HorizontalTextAlignment="Center"/>
+
+                        <ImageButton  Grid.Row="2" Grid.Column="0" Source="studt.png" BorderWidth="4" HeightRequest="400" WidthRequest="60" BorderColor="white" CornerRadius="15" BackgroundColor="#9e9e9e" x:Name="btnstudt" Clicked="btnstudt_Clicked"/>
+                        <Label Grid.Row="3" Text="Student List "   FontAttributes="Bold" Grid.Column="0"  TextColor="#bd6513" HorizontalTextAlignment="Center"/>
+                        <ImageButton  Grid.Row="2" Grid.Column="1" Source="Teacher_list" BorderWidth="4" HeightRequest="400" WidthRequest="60" BorderColor="white" CornerRadius="15" BackgroundColor="#795548" x:Name="btcteach" Clicked="btcteach_Clicked" />
+                        <Label Grid.Row="3" Text="Teacher List"   FontAttributes="Bold" Grid.Column="1"  TextColor="#bd6513" HorizontalTextAlignment="Center"/>
+                        
+                        <ImageButton  Grid.Row="4" Grid.Column="0" Source="msge.png" BorderWidth="4" HeightRequest="400" WidthRequest="60" BorderColor="white" CornerRadius="15" BackgroundColor="#00bcd5" x:Name="btnmsg" Clicked="btnmsg_Clicked"/>
+                        <Label Grid.Row="5" Text="Request Message "   FontAttributes="Bold" Grid.Column="0"  TextColor="#bd6513" HorizontalTextAlignment="Center"/>
+                        <ImageButton  Grid.Row="4" Grid.Column="1" Source="push_notifi" BorderWidth="4" HeightRequest="400" WidthRequest="60" BorderColor="white" CornerRadius="15" BackgroundColor="#009688" x:Name="btnnotifi" Clicked="btnnotifi_Clicked" />
+                        <Label Grid.Row="5" Text="Notification"   FontAttributes="Bold" Grid.Column="1"  TextColor="#bd6513" HorizontalTextAlignment="Center"/>
+
+
+                    </Grid>
+                </StackLayout>
+
+             
+
+            </StackLayout>
+
+
+
+
+
+               
+
+
+
+            <!--<Label   Text="Welcome to Admin Panel!" FlowDirection="LeftToRight"   TextColor="#bd6513" FontSize="20" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            <Label>
+
+            </Label>
+            <Label Text="View TimeTable"  FontSize="20" VerticalTextAlignment="Start" TextColor="#bd6513" HorizontalTextAlignment="Start" FontAttributes="Bold"/>
+            <ImageButton  BorderWidth="4" BorderColor="white" CornerRadius="15" BackgroundColor="#bd6513" x:Name="btnGetStarted" Clicked="btnGetStarted_Clicked"  Source="bk_image" Aspect="AspectFit"  HeightRequest="300" WidthRequest="500"  />-->
+
+
+
+
+
+
+
+
+       
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+<!--<ContentPage.BindingContext>
+        <VM:View_AdminHome/>
+    </ContentPage.BindingContext>-->
+
+    <!--<Grid>-->
+    <!--<xct:MediaElement x:Name="bgvideo" Source="bg_video.mp4" ShowPlaybackControls="True" IsLooping="True" Aspect="AspectFill" AutoPlay="true" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>-->
+    <!--</Grid>
+    <BoxView>
+        <BoxView.Background>
+            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                <GradientStop Color="Transparent" Offset="0"/>
+                <GradientStop Color="#bd6513" Offset="0.9"/>
+                <GradientStop Color="#bd6513" Offset="1"/>
+            </LinearGradientBrush>
+
+
+        </BoxView.Background>-->
+    <!--</BoxView>-->
+    <!--<Grid RowDefinitions="Auto,Auto,Auto" RowSpacing="40" HeightRequest="200" Margin="30,30,30,100" VerticalOptions="End">
+        <CarouselView x:Name="cvonboarding" IndicatorView="Loadingindicator" ItemsSource="{Binding Onboardings}" VerticalOptions="End">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Spacing="10">
+                        <Label Text="{Binding Heading}" FontSize="26" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" WidthRequest="220"/>
+                        <Label Text="{Binding Caption}" FontSize="14" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" WidthRequest="250"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <IndicatorView x:Name="Loadingindicator" Grid.Row="1" IndicatorsShape="Circle" IndicatorColor="White"
+SelectedIndicatorColor="#bd6513"  />
+    </Grid>-->
+

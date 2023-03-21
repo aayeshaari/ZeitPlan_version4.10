@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Login_System.Logout" Title="Logout">
+    <ContentPage.Content>
+        
+        <StackLayout Padding="24">
+            <Button Text="Logout"  FontAttributes="Bold" CornerRadius="30" BackgroundColor="#bd6513" TextColor="#FFFFFF" Clicked="Button_Clicked"/>
+           
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

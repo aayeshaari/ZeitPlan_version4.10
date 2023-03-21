@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Teacher_Detail" Title="Teacher Detail">
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+
+
+            <ScrollView Orientation="Vertical">
+                <StackLayout Padding="24" Margin="0" >
+
+                    <Frame BackgroundColor="#bd6513" HasShadow="True" HeightRequest="640" WidthRequest="500" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+                        <StackLayout>
+                            <StackLayout HorizontalOptions="CenterAndExpand">
+                                <Label Text="Teacher Detail" TextColor="White" FontSize="Large" FontAttributes="Bold"  HorizontalTextAlignment="Center">
+                                </Label>
+                            </StackLayout>
+                            <StackLayout Margin="0,25,0,0">
+
+
+                                <Grid ColumnDefinitions="150,160" VerticalOptions="Center" HorizontalOptions="Center"  RowDefinitions="80,60,60,60,60,60,60,60" Grid.ColumnSpan="2" Grid.RowSpan="7" >
+                                    <!--<Label Grid.Row="0"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"  Text="TeacherID:"/>
+                                        <Label Grid.Row="0" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="TeacherID"/>-->
+                                    <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"  FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"  Text="Image:"/>
+                                    <Image Grid.Row="0"  Grid.Column="1"  BackgroundColor="White"  x:Name="TeacherImage"/>
+                                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" BackgroundColor="White"    FontAttributes="Bold" Grid.Row="1"  Grid.Column="0" Text="TeacherName:"/>
+                                    <Label Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"  BackgroundColor="White" Grid.Column="1"  x:Name="TeacherName"/>
+                                    <Label Grid.Row="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"   Text="TeacherAddress:"/>
+                                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Row="2" Grid.Column="1"  BackgroundColor="White"  x:Name="TeacherAddress"/>
+                                    <Label Grid.Row="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"   Text="TeacherPhone:"/>
+                                    <Label Grid.Row="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Column="1"  BackgroundColor="White" x:Name="TeacherPhone"/>
+                                    <Label Grid.Row="4"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"  FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"   Text="TeacherEmail:"/>
+                                    <Label Grid.Row="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Column="1"  BackgroundColor="White"  x:Name="TeacherEmail"/>
+                                    <Label Grid.Row="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"   Text="TeacherPassword:"/>
+                                    <Label Grid.Row="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Column="1"  BackgroundColor="White"  x:Name="TeacherPassword"/>
+                                    <Label Grid.Row="6" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"   Text="DepartmentName:"/>
+                                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Row="6" Grid.Column="1"  BackgroundColor="White"  x:Name="DepartmentName"/>
+
+                                    <Label Grid.Row="7" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"   Text="Status:"/>
+                                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Row="7" Grid.Column="1"  BackgroundColor="White"  x:Name="txtStatus"/>
+                                </Grid>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Manage_Slot" Title="Manage Slot">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <ListView x:Name="DataList" ItemTapped="DataList_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell Text="{Binding SLOT_START_TIME}" Detail="{Binding SLOT_END_TIME }" ImageSource="icon_feed.png"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

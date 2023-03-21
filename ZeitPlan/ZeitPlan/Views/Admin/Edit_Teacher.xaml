@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Edit_Teacher">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <Image x:Name="Previewpic" Source="image_picker">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Picker Title="--Select Department" x:Name="ddlDepartment"/>
+
+            <Entry x:Name="txtTechName"  ReturnType="Next" Placeholder="Teacher Name" Keyboard="Chat"/>
+            <Entry x:Name="txtTechEmail"  ReturnType="Next" Placeholder="Email" Keyboard="Email"/>
+            <Entry x:Name="txtTechPassword"  ReturnType="Next" Placeholder="Password" Keyboard="Chat"/>
+            <Entry x:Name="txtTechPhone"  ReturnType="Next" Placeholder="Phone" Keyboard="Numeric"/>
+            <Entry x:Name="txtTechAdress"  ReturnType="Next" Placeholder="Address" Keyboard="Chat"/>
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <Button Text="Update Teacher" x:Name="btncat" Clicked="btncat_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

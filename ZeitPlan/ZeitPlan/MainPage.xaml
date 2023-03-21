@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.MainPage" BackgroundColor="White" BackgroundImageSource="mg.jpg" >
+  
+        <StackLayout Padding="24" VerticalOptions="CenterAndExpand">
+            <Image Source="ic_ZP_w.png"/>
+
+        <Label FontSize="48"  HorizontalOptions="CenterAndExpand" TextColor="#bd6513" Text="ZeitPlan"/>
+        <Label/>
+        <Label/>
+        <Label/>
+        <Label/>
+           
+                <Label FontSize="Medium" HorizontalOptions="CenterAndExpand" TextColor="#bd6513" Text="The bad news is time flies. The good news is you're the pilot." Margin="0,0,0,15"/>
+                <Button Text="Admin" BorderWidth="4"  CornerRadius="30" BackgroundColor="#bd6513" TextColor="white"  x:Name="btnadmin" Clicked="btnadmin_Clicked" Margin="0,0,0,10"/>
+                <Button Text="Teacher" BorderWidth="4"  CornerRadius="30" BackgroundColor="#bd6513" TextColor="white"  x:Name="btnteacher" Clicked="btnteacher_Clicked" Margin="0,0,0,10"/>
+                <Button Text="Student" BorderWidth="4"  CornerRadius="30" BackgroundColor="#bd6513" TextColor="white"  x:Name="btnStudent" Clicked="btnStudent_Clicked"/>
+
+
+     
+        </StackLayout >
+ 
+</ContentPage>

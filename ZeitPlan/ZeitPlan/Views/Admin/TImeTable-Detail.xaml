@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.TImeTable_Detail" Title="Time Table Detail">
+    <ContentPage.Content>
+        <StackLayout Padding="24" Margin="0,30" >
+
+            <Frame BackgroundColor="#bd6513" HasShadow="True" HeightRequest="400" WidthRequest="400" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+                <Grid ColumnDefinitions="130,160" VerticalOptions="Center" HorizontalOptions="Center"  RowDefinitions="60,60,60,60,60,60" Grid.ColumnSpan="2" Grid.RowSpan="6" >
+                    <Label Grid.Row="0"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"  Text="TimeTable_ID:"/>
+                    <Label Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="TimeTableID"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" BackgroundColor="LightBlue"    FontAttributes="Bold" Grid.Row="1"  Grid.Column="0" Text="Class_FID:"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Row="1"   BackgroundColor="LightGray" Grid.Column="1" x:Name="ClassFID"/>
+
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Row="2"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="Course_FID:"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Row="2" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="CourseFID"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Row="3"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="Slot_FID:"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Row="3" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="SlotFID"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Row="4"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="Room_FID:"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Row="4" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="RoomFID"/>
+
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Row="5"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="Teacher_FID:"/>
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Row="5" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="TeacherFID"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

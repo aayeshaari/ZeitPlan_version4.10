@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Assign_Course_To_Teacher" Title="Assign Class To Teacher">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <Picker Title="--Select Class" x:Name="ddlClass"/>
+            <Picker Title="--Select Teacher" x:Name="ddlTeacher"/>
+         
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False"/>
+            <Button Text="Assign" x:Name="btnassign"  CornerRadius="30" Clicked="btnassign_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

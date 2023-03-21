@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Add_Room" Title="Add Room">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <Picker Title="--Select Department" x:Name="ddlDepartment"/>
+            <Entry x:Name="txtRNO" Placeholder="Room Number"  ReturnType="Next" Keyboard="Numeric"/>
+
+           
+
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <Button Text="Add Room" x:Name="btnRoom"  CornerRadius="30" Clicked="btnRoom_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

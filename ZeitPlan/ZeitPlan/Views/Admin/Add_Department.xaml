@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Add_Department" Title="Add Department">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <Entry x:Name="txtDtName" Placeholder="Department Name"  ReturnType="Next" Keyboard="Chat"/>
+          
+
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <Button Text="Add Department" x:Name="btnDepartmet"  CornerRadius="30" Clicked="btnDepartmet_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

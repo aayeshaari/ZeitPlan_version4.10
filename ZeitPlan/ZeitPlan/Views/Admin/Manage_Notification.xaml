@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Manage_Notification" Title="Manage Notification">
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <ListView x:Name="DataList"  HasUnevenRows="True" ItemTapped="DataList_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                      
+                        <ViewCell>
+                            <Grid Padding="5">
+                                <Frame CornerRadius="10" HasShadow="True" Padding="7">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="{Binding NITI_IMAGE}" HeightRequest="100" WidthRequest="100"/>
+                                        <StackLayout Padding="3">
+                                            <Label Text="{Binding NOTI_DATE}" VerticalOptions="Center" TextColor="#BD6513" FontSize="Medium" FontAttributes="Bold"/>
+                                            <Label Text="{Binding NOTI_TIME }" VerticalOptions="Center" TextColor="#BD6513" FontSize="Small"/>
+                                            <Label Text="{Binding NOTI_TEXT }" VerticalOptions="Center" TextColor="#bd6513" FontSize="Small"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

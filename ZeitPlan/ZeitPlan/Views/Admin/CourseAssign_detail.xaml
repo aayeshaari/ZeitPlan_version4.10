@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.CourseAssign_detail" Title="Course Class Assign Detail">
+    <ContentPage.Content>
+        <StackLayout Padding="24" Margin="0" >
+
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <Frame BackgroundColor="#bd6513"  Margin="0,50" HasShadow="True" HeightRequest="250" WidthRequest="400" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+                <StackLayout Padding="0" Margin="0,55">
+
+                    <Grid ColumnDefinitions="130,160" VerticalOptions="Center" HorizontalOptions="Center"  RowDefinitions="60,60,60" Grid.ColumnSpan="2" Grid.RowSpan="6" >
+                       
+                        <Label BackgroundColor="White"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"   FontAttributes="Bold" Grid.Row="0"  Grid.Column="0" Text="Class Name:"/>
+                        <Label Grid.Row="0"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"  BackgroundColor="White" Grid.Column="1" x:Name="ClassName"/>
+                        <Label Grid.Row="1"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="White"   Text="Course Name:"/>
+                        <Label Grid.Row="1"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#bd6513" Grid.Column="1"  BackgroundColor="White"  x:Name="CourseName"/>
+
+
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

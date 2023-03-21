@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Teacher.TeacherHome" BackgroundImageSource="mg.jpg"
+             Title="Teacher Home">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Exit" Clicked="ToolbarItem_Clicked" />
+        <ToolbarItem IconImageSource="ic_noti" Clicked="ToolbarItem_Clicked_1"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20"  Spacing="10">
+            <Grid>
+                <StackLayout HorizontalOptions="FillAndExpand"  Padding="0" Margin="0">
+
+                    <Frame BackgroundColor="white"  CornerRadius="20" HeightRequest="90" HorizontalOptions="FillAndExpand" Padding="0">
+                        <Image  Source="Teacher_Home.png"   Aspect="AspectFill" Margin="0" />
+
+                    </Frame>
+                </StackLayout>
+            </Grid>
+            <StackLayout Padding="10" Spacing="0">
+                <Grid ColumnDefinitions="170,170" RowSpacing="0" ColumnSpacing="15" VerticalOptions="Start" HorizontalOptions="Start"  RowDefinitions="180,40,180,40,180,40" Grid.ColumnSpan="1" Grid.RowSpan="6" >
+
+
+
+                    <ImageButton  Grid.Row="0" Grid.Column="0" Source="Tech_pro.png" BorderWidth="4" HeightRequest="400" WidthRequest="60" BorderColor="white" CornerRadius="15" BackgroundColor="LightGray" x:Name="btnClicked" Clicked="btnClicked_Clicked"/>
+                    <Label Grid.Row="1" Text="Teacher Profile"   FontAttributes="Bold" Grid.Column="0"  TextColor="#bd6513" HorizontalTextAlignment="Center"/>
+                    <ImageButton  Grid.Row="0" Grid.Column="1" Source="bk_image" BorderWidth="4" HeightRequest="400" WidthRequest="60" BorderColor="white" CornerRadius="15" BackgroundColor="#febc04" x:Name="btntime" Clicked="btntime_Clicked" />
+                    <Label Grid.Row="1" Text="Time Table"   FontAttributes="Bold" Grid.Column="1"  TextColor="#bd6513" HorizontalTextAlignment="Center"/>
+
+                    <ImageButton  Grid.Row="4" Grid.Column="0" Source="studt.png" BorderWidth="4" HeightRequest="400" WidthRequest="60" BorderColor="white" CornerRadius="15" BackgroundColor="#9e9e9e" x:Name="btnstudt" Clicked="btnstudt_Clicked"/>
+                    <Label Grid.Row="5" Text="Student List "   FontAttributes="Bold" Grid.Column="0"  TextColor="#bd6513" HorizontalTextAlignment="Center"/>
+                    <!--<ImageButton  Grid.Row="2" Grid.Column="1" Source="Teacher_list" BorderWidth="4" HeightRequest="400" WidthRequest="60" BorderColor="white" CornerRadius="15" BackgroundColor="#795548" x:Name="btnteach" Clicked="btnteach_Clicked"/>
+                    <Label Grid.Row="3" Text="Teacher List"   FontAttributes="Bold" Grid.Column="1"  TextColor="#bd6513" HorizontalTextAlignment="Center"/>-->
+
+                    <ImageButton  Grid.Row="2" Grid.Column="0" Source="msge.png" BorderWidth="4" HeightRequest="400" WidthRequest="60" BorderColor="white" CornerRadius="15" BackgroundColor="#00bcd5" x:Name="btnmsg" Clicked="btnmsg_Clicked"/>
+                    <Label Grid.Row="3" Text="Request Message "   FontAttributes="Bold" Grid.Column="0"  TextColor="#bd6513" HorizontalTextAlignment="Center"/>
+                    <ImageButton  Grid.Row="2" Grid.Column="1" Source="push_notifi" BorderWidth="4" HeightRequest="400" WidthRequest="60" BorderColor="white" CornerRadius="15" BackgroundColor="#009688" x:Name="btnnotifi" Clicked="btnnotifi_Clicked" />
+                    <Label Grid.Row="3" Text="Notification"   FontAttributes="Bold" Grid.Column="1"  TextColor="#bd6513" HorizontalTextAlignment="Center"/>
+
+
+                </Grid>
+            </StackLayout>
+
+
+
+        </StackLayout>
+
+
+       
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

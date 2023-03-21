@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Edit_Student">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <Picker Title="--Select Class" x:Name="ddlClass"/>
+            <Entry x:Name="txtStName" Placeholder="Student Name" Keyboard="Chat"/>
+            <Entry x:Name="txtStEmail" Placeholder="Email" Keyboard="Email"/>
+            <Entry x:Name="txtStPassword" Placeholder="Password" Keyboard="Chat"/>
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <Button Text="Update Student" x:Name="btnstudent" Clicked="btnstudent_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="ZeitPlan.Views.Admin.AdminSideBarFlyout"
+             Title="Flyout">
+    <ScrollView Orientation="Vertical">
+        <StackLayout Margin="0">
+            <!--<StackLayout.Childern WidthRequest="100" HeightRequest="80"  HorizontalOptions="Center" VerticalOptions="FillAndExpand" Orientation="Vertical">
+                <Image Source="profile_icon" Aspect="Fill"/>
+                <Label Text="Admin Profile"/>
+            </StackLayout.Childern>-->
+            <ListView x:Name="MenuItemsListView"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemsSource="{Binding MenuItems}">
+                
+                <ListView.Header>
+                    <Grid BackgroundColor="{StaticResource Primary}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="80"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="10"/>
+                        </Grid.RowDefinitions>
+
+                        <Label
+              Grid.Column="1"
+              Grid.Row="2"
+                            
+              Text="Admin Panel"
+                            
+              TextColor="white"
+                            
+              Style="{DynamicResource SubtitleStyle}"/>
+                        <!--<Grid>-->
+                            <!--<Image Source="bg.png" Aspect="AspectFill" />-->
+                            <!--<StackLayout Padding="0,20,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">-->
+                                <!--<controls:CircleImage BorderColor="White" BorderThickness="2" Source="profile.png" Aspect="AspectFill" WidthRequest="85" HeightRequest="85" />-->
+                                <!--<Label Text="Admin" TextColor="White" FontSize="Large" />
+                            </StackLayout>
+                        </Grid>-->
+
+
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand" Margin="0">
+                                <StackLayout Orientation="Horizontal" >
+
+                                    <Image Source="{Binding Icon}" WidthRequest="30">
+                                        
+                                    </Image>
+                                    <Label VerticalOptions="FillAndExpand"   Text="{Binding Title}" FontSize="20"/>
+
+                                </StackLayout>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

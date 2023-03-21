@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Teacher.Request_Portol" Title="Request Message">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <Label Text="To:" FontSize="Medium" FontAttributes="Bold" TextColor="#bd6513"/>
+            <Entry Placeholder="Email" HorizontalOptions="FillAndExpand" Keyboard="Chat"  x:Name="txtTo"/>
+           
+            <Label Text="Type:" FontSize="Medium" FontAttributes="Bold" TextColor="#bd6513"/>
+            <Picker Title="--SelectType" x:Name="ddltype">
+                <Picker.Items>
+                    <x:String >Complain</x:String>
+                    <x:String >FeedBack</x:String>
+                    <x:String >Suggestion</x:String>
+                    <x:String >Request</x:String>
+                </Picker.Items>
+                </Picker>
+            <Label Text="Body:" FontSize="Medium" FontAttributes="Bold" TextColor="#bd6513"/>
+            <Editor Placeholder="Message" HorizontalOptions="FillAndExpand" Keyboard="Chat" HeightRequest="150" x:Name="txtBody"/>
+           
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <Button Text="Send" Clicked="sendbtn_Clicked"   x:Name="sendbtn" BackgroundColor="#bd6513" BorderColor="white"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

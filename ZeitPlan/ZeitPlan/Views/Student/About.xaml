@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Student.About"
+               xmlns:helpers ="clr-namespace:ZeitPlan.Helpers"
+             Title="About Us">
+    <ContentPage.Content>
+       
+            <Grid>
+                <Image Source="mg.jpg" Aspect="Fill" />
+                <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical" Padding="20,20,30,20" Margin="30,-10,30,0">
+                    <Image Source="ic_ZP_w.png"   HorizontalOptions="CenterAndExpand" ></Image>
+                    <Label/>
+                    <Label/>
+                    <Label Text="Version 1.0" FontAttributes="Bold"  TextColor="#bd6513" VerticalTextAlignment="Center" Margin="30,-50,0,0" HorizontalTextAlignment="Center" FontSize="20"></Label>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" Padding="20,30,20,30" Spacing="0" Margin="20,170,20,20" >
+                    <Label/>
+                    <Label/>
+                    <Label/>
+                    
+                <Label FontSize="15" TextColor="#bd6513" Text="Zeitplan is the  intuitive app for managing your university life. Save your time and make facilitated contact with the staff in case any issues happen. Admin because it were ought to enter information once, since Timetable syncs over all individuals who enroll through the app."/>
+                   
+                    <Label/>
+
+
+                    <Label Text="Govt. Graduate College(W)" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="#bd6513" FontSize="15"/>
+                    <Label />
+                  
+
+                    <Label Text="Created by:" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="#bd6513" />
+                    <Label/>
+                    <Label Text="Ayesha Arif" FontAttributes="Bold" FontSize="15" HorizontalOptions="CenterAndExpand" TextColor="#bd6513"/>
+
+                    <StackLayout Padding="0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Label HorizontalOptions="CenterAndExpand" TextColor="#bd6513" FontSize="Large"  Text="{x:Static helpers:FontAwesome.Envelope }" FontFamily="{StaticResource FontAwesome}" />
+                        <Label HorizontalTextAlignment="Center" x:Name="lblemail" TextColor="#bd6513" Text="aayeshaarif52@gmail.com" />
+                    </StackLayout>
+
+                    <Label Text="Areej Ashfaq" FontAttributes="Bold" FontSize="15" HorizontalOptions="CenterAndExpand" TextColor="#bd6513"/>
+
+                    <StackLayout Padding="0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Label HorizontalOptions="CenterAndExpand" TextColor="#bd6513" FontSize="Large"  Text="{x:Static helpers:FontAwesome.Envelope }" FontFamily="{StaticResource FontAwesome}" />
+                        <Label HorizontalTextAlignment="Center" x:Name="lblareej" TextColor="#bd6513" Text="muskanrana3346@gmail.com" />
+                    </StackLayout>
+
+                    <Label Text="Noor e Sahar" FontAttributes="Bold" FontSize="15" HorizontalOptions="CenterAndExpand" TextColor="#bd6513"/>
+
+
+                    <StackLayout Padding="0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Label HorizontalOptions="CenterAndExpand" TextColor="#bd6513" FontSize="Large"  Text="{x:Static helpers:FontAwesome.Envelope }" FontFamily="{StaticResource FontAwesome}" />
+                        <Label HorizontalTextAlignment="Center" x:Name="lblnoor" TextColor="#bd6513" Text="gname6471@gmail.com" />
+                    </StackLayout>
+
+                    <Label Text="Zanaib Abid" FontAttributes="Bold" FontSize="15" HorizontalOptions="CenterAndExpand" TextColor="#bd6513"/>
+
+
+                    <StackLayout Padding="0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Label HorizontalOptions="CenterAndExpand" TextColor="#bd6513" FontSize="Large"  Text="{x:Static helpers:FontAwesome.Envelope }" FontFamily="{StaticResource FontAwesome}" />
+                        <Label HorizontalTextAlignment="Center" x:Name="lblzanaib" TextColor="#bd6513" Text="mehakabid563@gmail.com" />
+                    </StackLayout>
+
+                </StackLayout>
+
+
+            </Grid>
+     
+    </ContentPage.Content>
+</ContentPage>

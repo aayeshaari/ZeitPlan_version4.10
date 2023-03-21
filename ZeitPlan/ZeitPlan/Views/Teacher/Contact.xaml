@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Teacher.Contact" Title="Contact Us"
+             xmlns:helpers ="clr-namespace:ZeitPlan.Helpers">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="mg.jpg" Aspect="Fill" />
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  Padding="10,20,10,20" Margin="10,-250,10,0">
+
+                <StackLayout Margin="30,150,30,0">
+                    <Image Source="ic_ZP_w.png"   HorizontalOptions="CenterAndExpand" ></Image>
+                </StackLayout>
+                <Label>
+                    
+                </Label>
+                <Label>
+
+                </Label>
+
+                <Label FontAttributes="Bold" FontSize="Large" Text="Contact Us" TextColor="#bd6513" HorizontalOptions="CenterAndExpand"/>
+
+
+                <Label/>
+
+                <StackLayout Padding="0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Label HorizontalOptions="CenterAndExpand" TextColor="#bd6513" FontSize="Large"  Text="{x:Static helpers:FontAwesome.Envelope }" FontFamily="{StaticResource FontAwesome}" />
+                    <Label HorizontalTextAlignment="Center" x:Name="lblemail" TextColor="#bd6513" Text="support@ZeitPlan.com" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="0" HorizontalOptions="CenterAndExpand">
+                    <Label HorizontalOptions="CenterAndExpand" TextColor="#bd6513" FontSize="Large"  Text="{x:Static helpers:FontAwesome.Phone }" FontFamily="{StaticResource FontAwesome}" />
+                    <Label HorizontalTextAlignment="Center" x:Name="lblphn" TextColor="#bd6513" Text="+923416534064" />
+                </StackLayout>
+                <StackLayout Padding="0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Label  HorizontalOptions="CenterAndExpand" TextColor="#bd6513" FontSize="Large"  Text="{x:Static helpers:FontAwesome.Map_marker }" FontFamily="{StaticResource FontAwesome}" />
+                    <Label HorizontalTextAlignment="Center" x:Name="lbladdress" TextColor="#bd6513" Text="Allah Bakhsh Colony,Approach Road,St.17 Gujranwala,Pakistan" />
+                </StackLayout>
+
+
+            </StackLayout>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

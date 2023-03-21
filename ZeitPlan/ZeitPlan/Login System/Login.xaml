@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="ZeitPlan.LoginSystem.Login"
+             Title="Admin Login" BackgroundImageSource="mg.jpg" BackgroundColor="White"
+             >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Back" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        
+        <StackLayout Padding="0">
+            <Grid>
+
+                <StackLayout Padding="0" Margin="0">
+
+                    <!--for water image-->
+                    <Frame BackgroundColor="white"  HeightRequest="210" HorizontalOptions="FillAndExpand" Padding="0">
+                        <Image Source="def.png" Aspect="AspectFill" Margin="0" />
+                    </Frame>
+                </StackLayout>
+                
+                <!--for white frame on which Login frame email or password is used-->
+                <StackLayout Margin="15,110,15,0">
+
+                    <Frame BackgroundColor="white" HasShadow="True" HeightRequest="500" HorizontalOptions="FillAndExpand">
+
+
+                        <StackLayout>
+
+                            <StackLayout HorizontalOptions="CenterAndExpand">
+                                <Label Text="LOGIN" TextColor="#bd6513" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center">
+                                </Label>
+
+
+                            </StackLayout>
+                            
+                            <!--for Email-->
+                            
+                            <StackLayout Margin="0,25,0,0">
+
+
+                                <Frame BackgroundColor="white"  Padding="0" Margin="0" BorderColor="#bd6513" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                   
+                                    <StackLayout Orientation="Horizontal">
+                                     
+                                        <Frame BackgroundColor="white" CornerRadius="15" HeightRequest="30" WidthRequest="30" Padding="0" Margin="7" HorizontalOptions="Start">
+                                            <Image Source="em.png"  BackgroundColor="White" Aspect="AspectFill" Margin="0" />
+                                        </Frame>
+                                        <Entry ClearButtonVisibility="WhileEditing"  TextChanged="txtEmail_TextChanged" ReturnType="Next" Placeholder="Email" TextColor="#bd6513" PlaceholderColor="Gray" Keyboard="Email" x:Name="txtEmail" HorizontalOptions="FillAndExpand" Margin="0,0,15,0">
+
+                                        </Entry>
+                                       
+
+                                    </StackLayout>
+                                </Frame>
+                                <!--for email vailidation it show down to the email-->
+                                
+                                <Label x:Name="lblEmailVaild" IsVisible="false"/>
+                                
+                                <!--frame for show password image-->
+                                <Frame x:Name="frmPass" BackgroundColor="white" Padding="0" Margin="0,20,0,0" BorderColor="#bd6513" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <!--for Password-->
+                                    <StackLayout Orientation="Horizontal">
+                                    
+                                        <Frame BackgroundColor="white" CornerRadius="30" HeightRequest="35" WidthRequest="35" Padding="0" Margin="7" HorizontalOptions="Start">
+                                            <Image Source="pass.png" BackgroundColor="White" Aspect="AspectFill" Margin="0" />
+                                        </Frame>
+                                        <Entry ClearButtonVisibility="WhileEditing" TextChanged="txtPassword_TextChanged" Placeholder="Password" TextColor="#bd6513" PlaceholderColor="Gray" IsPassword="True" x:Name="txtPassword" HorizontalOptions="FillAndExpand" Margin="0,0,15,0">
+
+                                        </Entry>
+                                        
+                                       <!--for btn show passwrd image as btn-->
+                                    <Frame BackgroundColor="white" CornerRadius="30"  HeightRequest="35" WidthRequest="35" Padding="0" Margin="7" HorizontalOptions="Start">
+                                            <ImageButton x:Name="btnShowPassword" Clicked="btnShowPassword_Clicked" Source="eyenot.png" />
+                                        </Frame>
+
+                                    </StackLayout>
+                                </Frame>
+                                <!--for password vailidation it show down to the email-->
+                                <Label x:Name="lblPasswordVaild" IsVisible="false"/>
+                            </StackLayout>
+                            
+                            
+                            <!--for remember me, check,forget Password-->
+                            <StackLayout Orientation="Horizontal">
+                                <CheckBox x:Name="RememberMeCheck" IsChecked="False" Color="#bd6513"></CheckBox>
+                                <Label Text="Remember me" TextColor="#bd6513" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                                <Label Text="Forget Password" HorizontalTextAlignment="End" FontAttributes="Bold" FontSize="15" VerticalTextAlignment="End" Margin="6" HorizontalOptions="EndAndExpand" TextColor="#bd6513">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"></TapGestureRecognizer>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                            </StackLayout>
+                            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+                            
+                            <!--for btnLogin-->
+                            <Button x:Name="btnLogin" Text="LOGIN" FontAttributes="Bold" CornerRadius="30" BackgroundColor="#bd6513" TextColor="#FFFFFF" Clicked="Button_Clicked"></Button>
+                            
+                            <!--for forget password to get password and reset-->
+                            <Button x:Name="btnGetPass" Text="Get Password" IsVisible="false" FontAttributes="Bold" CornerRadius="30" BackgroundColor="#bd6513" TextColor="#FFFFFF" Clicked="btnGetPass_Clicked"></Button>
+                            <Button x:Name="btnreset" Text="Back" FontAttributes="Bold" IsVisible="false" CornerRadius="30" BackgroundColor="#bd6513" TextColor="#FFFFFF" Clicked="btnreset_Clicked"></Button>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                              
+                                   <!--for create new Account-->
+                                <Label Text="Create new Account" HorizontalTextAlignment="Center" TextColor="#bd6513" FontAttributes="Bold" VerticalTextAlignment="Center">
+                                    <Label.GestureRecognizers>
+
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </Frame>
+
+
+                </StackLayout>
+            </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--<Grid Padding="24" RowSpacing="20" VerticalOptions="CenterAndExpand" RowDefinitions="Auto,Auto,Auto"   >
+                    <Entry x:Name="txtEmail" Grid.Row="1" BackgroundColor="Transparent" Placeholder="Email...." Keyboard="Email"/>
+                    <Entry x:Name="txtPassword" Grid.Row="2" BackgroundColor="Transparent" Placeholder="Password...." IsPassword="True"/>
+           
+            <Button Grid.Row="3" CornerRadius="15" BackgroundColor="White" Text="Login" Clicked="Button_Clicked"/>
+                    <Label Grid.Row="4" Text="Registered Now">
+
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                   
+                </Grid>-->
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

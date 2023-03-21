@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Add_Admin" 
+             Title="Add Admin">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            
+           
+            <Entry x:Name="txtName" Placeholder="Name" PlaceholderColor="Gray" ReturnType="Next" Keyboard="Chat"/>
+            <Entry x:Name="txtEmail" Placeholder="Email" PlaceholderColor="Gray" ReturnType="Next" Keyboard="Email"/>
+            <Entry x:Name="txtPass" IsPassword="True" PlaceholderColor="Gray" Placeholder="Password"  ReturnType="Next"/>
+            <Entry x:Name="txtCPass" IsPassword="True" PlaceholderColor="Gray" Placeholder="Confirm Password"  ReturnType="Next"/>
+            <Entry x:Name="txtPhone" Placeholder="Phone" PlaceholderColor="Gray" ReturnType="Next" Keyboard="Chat"/>
+            
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <Button Text="Add Admin" x:Name="btnAdmin" CornerRadius="30" Clicked="btnAdmin_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
